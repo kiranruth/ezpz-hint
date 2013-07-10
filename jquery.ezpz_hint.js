@@ -31,6 +31,7 @@
 			hint.attr('tabIndex', $(this).attr('tabIndex'));
 			hint.addClass(settings.hintClass);
 			hint.val(text);
+			hint.css('color','#999999');
 			
 			// hide the input
 			$(this).hide();
@@ -47,6 +48,8 @@
 					if ($(this).val() == '') {
 						$(this).hide();
 						dummy_input.show();
+					}else{
+						dummy_input.css('color','#000000');
 					}
 				});
 				$(this).hide();
